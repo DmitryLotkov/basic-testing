@@ -1,7 +1,7 @@
 // Uncomment the code below and write your tests
 // import { simpleCalculator, Action } from './index';
 
-import {simpleCalculator, Action} from "./index";
+import { simpleCalculator, Action } from './index';
 
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
@@ -17,7 +17,7 @@ describe('simpleCalculator tests', () => {
     const result = simpleCalculator(arg);
 
     expect(result).toBe(-1);
-    expect(result).not.toBeNull()
+    expect(result).not.toBeNull();
   });
 
   test('should multiply two numbers', () => {
@@ -25,7 +25,7 @@ describe('simpleCalculator tests', () => {
     const result = simpleCalculator(arg);
 
     expect(result).toBe(6);
-    expect(result).not.toBeNull()
+    expect(result).not.toBeNull();
   });
 
   test('should divide two numbers', () => {
@@ -33,7 +33,7 @@ describe('simpleCalculator tests', () => {
     const result = simpleCalculator(arg);
 
     expect(result).toBe(4);
-    expect(result).not.toBeNull()
+    expect(result).not.toBeNull();
   });
 
   test('should exponentiate two numbers', () => {
@@ -41,14 +41,14 @@ describe('simpleCalculator tests', () => {
     const result = simpleCalculator(arg);
 
     expect(result).toBe(81);
-    expect(result).not.toBeNull()
+    expect(result).not.toBeNull();
   });
 
   test('should return null for invalid action', () => {
     const arg = { a: 9, b: 2, action: '%' };
     const result = simpleCalculator(arg);
 
-    expect(result).toBeNull()
+    expect(result).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
@@ -57,6 +57,6 @@ describe('simpleCalculator tests', () => {
 
     expect(result).not.toBe(11);
     expect(result).not.toBe('92');
-    expect(result).toBeNull()
+    expect(result).toBeNull();
   });
 });
